@@ -16,3 +16,18 @@ with limit:
     # 在这里编写需要限制时间的代码
     time.sleep(1.5) # 模拟耗时操作
 ```
+## 自定义处理程序
+```python
+# 定义一个自定义的处理程序
+def custom_handler():
+    print("任务超时！")
+    # 在这里处理超时后的逻辑
+# 初始化一个 TimeLimit 对象，并传入最高用时（毫秒）和自定义处理程序
+limit = TimeLimit(1000, custom_handler)  # 1 秒
+# 然后，使用 with 语句来限制任务的执行时间
+with limit:
+    # 在任务中插入一些检查点
+    limit.checkpoint()
+    # 在这里编写需要限制时间的代码
+    time.sleep(1.5) # 模拟耗时操作
+```
