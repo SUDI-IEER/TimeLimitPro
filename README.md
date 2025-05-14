@@ -16,9 +16,9 @@ with limit:
         # 在这里处理超时后的逻辑
     # 在这里编写需要限制时间的代码
     time.sleep(1.5) # 模拟耗时操作
-    try:                                                           # 在任务中插入一些检查点                                   limit.checkpoint() # 不触发
+    try:                                                           # 在任务中插入一些检查点                                   limit.checkpoint() # 触发
     except TimeoutError:
-        print("任务超时！") # 触发
+        print("任务超时！")
         # 在这里处理超时后的逻辑
 ```
 ## 自定义处理程序
