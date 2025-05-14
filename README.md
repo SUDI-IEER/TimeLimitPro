@@ -24,6 +24,7 @@ def custom_handler():
     # 在这里处理超时后的逻辑
 # 初始化一个 TimeLimit 对象，并传入最高用时（毫秒）和自定义处理程序
 limit = TimeLimit(1000, custom_handler)  # 1 秒
+limit.set_custom_handler(custom_handler)  # 在初始化后设置自定义处理程序
 # 然后，使用 with 语句来限制任务的执行时间
 with limit:
     # 在任务中插入一些检查点
