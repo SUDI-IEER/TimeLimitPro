@@ -1,5 +1,5 @@
 # 介绍
-![GitHub License](https://img.shields.io/github/license/LesBoys/TimeLimitPro?style=plastic) ![GitHub branch status](https://img.shields.io/github/checks-status/LesBoys/TimeLimitPro/master?style=plastic)
+![GitHub License](https://img.shields.io/github/license/LesBoys43/TimeLimitPro?style=plastic) ![GitHub branch status](https://img.shields.io/github/checks-status/LesBoys43/TimeLimitPro/master?style=plastic)
 这是一个简单的 Python 任务时间限制工具 可以轻松限制复杂任务的最高用时
 # 使用
 ```python
