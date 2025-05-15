@@ -37,5 +37,5 @@ with limit:
     limit.checkpoint() # 不触发
     # 在这里编写需要限制时间的代码
     time.sleep(1.5) # 模拟耗时操作
-    limit.checkpoimt() # 触发
+    limit.checkpoint() # 触发
 ```
